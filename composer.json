@@ -1,0 +1,32 @@
+{
+    "name": "tv2regionerne/statamic-assetdrop",
+    "scripts": {
+        "test": "./vendor/bin/pest"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tv2regionerne\\StatamicAssetdrop\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Assetdrop",
+            "description": ""
+        },
+        "laravel": {
+            "providers": [
+                "Tv2regionerne\\StatamicAssetdrop\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "statamic/cms": "^5.0",
+        "tv2regionerne/statamic-large-assets": "dev-main"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "pixelfear/composer-dist-plugin": true
+        }
+    }
+}

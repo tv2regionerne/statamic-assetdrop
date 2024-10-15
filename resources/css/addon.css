@@ -1,0 +1,27 @@
+.tv2reg-assetdrop-zone {
+    border: 1px solid #c4ccd4;
+    border-radius: .25rem;
+    display: flex;
+    aspect-ratio: 4/3;
+    overflow: auto;
+    &:not(.tv2reg-assetdrop-ready) {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    &.tv2reg-assetdrop-dragging {
+        background-color: #fafcff;
+    }
+}
+
+.tv2reg-assetdrop-status {
+    text-align: center;
+    margin: auto;
+    padding: 4rem;
+    svg {
+        width: 10rem;
+    }
+    button {
+        color: #43a9ff;
+        text-decoration: underline;
+    }
+}
