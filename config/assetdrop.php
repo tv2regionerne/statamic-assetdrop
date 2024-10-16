@@ -4,6 +4,8 @@ return [
 
     'container' => env('ASSETDROP_CONTAINER', 'assetdrop'),
 
+    'remove_processed' => env('ASSETDROP_REMOVE_PROCESSED', true),
+
     'image' => [
         'enabled' => env('ASSETDROP_IMAGE_ENABLE', true),
         'statamic' => [
@@ -31,11 +33,6 @@ return [
             'enabled' => env('ASSETDROP_VIDEO_EXTERNAL_ENABLE', false),
             'disk' => env('ASSETDROP_VIDEO_EXTERNAL_DISK', 'ftp'),
             'path' => env('ASSETDROP_VIDEO_EXTERNAL_PATH', '{{ assetdrop_uploaded_at | format="dmy" }}-{{ assetdrop_uploaded_by:initials }}-{{ assetdrop_name }}.{{ extension }}'),
-        ],
-        'kaltura' => [
-            'enabled' => env('ASSETDROP_VIDEO_KALTURA_ENABLE', false),
-            'tags' => env('ASSETDROP_VIDEO_KALTURA_TAGS', 'assetdrop'),
-            'categories' => env('ASSETDROP_VIDEO_KALTURA_CATEGORIES'),
         ],
     ],
 
