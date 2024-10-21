@@ -21,7 +21,7 @@
     },
     "require": {
         "statamic/cms": "^5.0",
-        "tv2regionerne/statamic-large-assets": "dev-main"
+        "tv2regionerne/statamic-large-assets": "^0.1"
     },
     "config": {
         "allow-plugins": {

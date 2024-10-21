@@ -34,7 +34,7 @@ class ServiceProvider extends AddonServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/assetdrop.php', 'assetdrop');
 
         $this->publishes([
-            __DIR__.'/../../config/assetdrop.php' => config_path('assetdrop.php'),
+            __DIR__.'/../config/assetdrop.php' => config_path('assetdrop.php'),
         ], 'assetdrop-config');
 
         Permission::extend(function () {
