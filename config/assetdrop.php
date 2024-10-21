@@ -15,7 +15,7 @@ return [
             'tags' => env('ASSETDROP_IMAGE_STATAMIC_TAGS', 'assetdrop'),
         ],
         'external' => [
-            'enabled' => env('ASSETDROP_IMAGE_EXTERNAL_ENABLE', true),
+            'enabled' => env('ASSETDROP_IMAGE_EXTERNAL_ENABLE', false),
             'disk' => env('ASSETDROP_IMAGE_EXTERNAL_DISK', 'ftp'),
             'path' => env('ASSETDROP_IMAGE_EXTERNAL_PATH', '{{ assetdrop_uploaded_at | format="dmy" }}-{{ assetdrop_uploaded_by:initials }}-{{ assetdrop_name }}.{{ extension }}'),
         ],
