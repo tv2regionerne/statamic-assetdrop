@@ -3,6 +3,7 @@
 namespace Tv2regionerne\StatamicAssetdrop\Actions\CP;
 
 use Statamic\Actions\Action;
+use Statamic\Contracts\Assets\Asset;
 use Tv2regionerne\StatamicAssetdrop\Actions\ProcessUpload as ProcessUploadAction;
 
 class ProcessUpload extends Action
@@ -16,7 +17,7 @@ class ProcessUpload extends Action
 
     public function visibleTo($item)
     {
-        return $item->container()->handle() === config('assetdrop.container');
+        return $item instanceof Asset && $item->container()->handle() === config('assetdrop.container');
     }
 
     public function authorize($user, $item)
